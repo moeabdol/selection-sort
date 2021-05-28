@@ -14,8 +14,7 @@ void selectionSort(vector<int> * numbers) {
                 smallest = j;
             }
 
-        if (numbers->at(smallest) < numbers->at(i))
-            swap(numbers->at(i), numbers->at(smallest));
+        swap(numbers->at(i), numbers->at(smallest));
     }
 }
 
