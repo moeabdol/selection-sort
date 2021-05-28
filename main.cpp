@@ -6,8 +6,8 @@ void selectionSort(vector<int> * numbers) {
     if (numbers->size() == 0 || numbers->size() == 1)
         return;
 
-    for (int i = 0; i < numbers->size() - 2; i++)
-        for (int j = i + 1; j < numbers->size() - 1; j++)
+    for (int i = 0; i <= numbers->size() - 2; i++)
+        for (int j = i + 1; j <= numbers->size() - 1; j++)
             if (numbers->at(j) < numbers->at(i))
                 swap(numbers->at(j), numbers->at(i));
 }
